@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff guide · Studio Center Auditions</title>
+  <meta name="description" content="How Studio Center's casting team runs auditions: projects, talent, uploads, client emails, tools, and reports.">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/sc-logo-white.png" alt="Studio Center" width="900" height="254"><span>Auditions guide</span></a>
+      <nav>
+        <a href="client-guide.html" class="hide-sm">Client guide</a>
+        <a href="staff-guide.html" aria-current="page">Staff guide</a>
+        <a class="signin" href="https://studiocenterauditions.com/auth/signin">Sign in</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="band">
+    <div class="wrap">
+      <div class="crumb"><a href="./">Guide home</a> › Staff guide</div>
+      <h1>Staff guide</h1>
+      <p>How the casting team runs auditions: setting up projects, casting and contacting talent, posting takes, keeping clients informed, and the tools and reports behind it.</p>
+    </div>
+  </div>
+
+  <main class="wrap guide">
+    <nav class="toc" aria-label="Contents">
+      <p>Contents</p>
+      <ol>
+        <li><a href="#sign-in">1. Signing in &amp; 2FA</a></li>
+        <li><a href="#dashboard">2. Dashboard</a></li>
+        <li><a href="#projects">3. Projects list</a></li>
+        <li><a href="#create">4. Creating a project</a></li>
+        <li><a href="#project-page">5. The project page</a></li>
+        <li><a href="#notes">6. Notes</a></li>
+        <li><a href="#files">7. Scripts &amp; references</a></li>
+        <li><a href="#auditions">8. Posting auditions</a></li>
+        <li><a href="#talent">9. Talent on a project</a></li>
+        <li><a href="#clients">10. Clients &amp; client emails</a></li>
+        <li><a href="#phases">11. Phases</a></li>
+        <li><a href="#roster">12. Talent roster &amp; typecasts</a></li>
+        <li><a href="#tools">13. Tools</a></li>
+        <li><a href="#reports">14. Reports</a></li>
+        <li><a href="#automatic">15. Automatic emails</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <section id="sign-in">
+        <h2><span class="num">1.</span>Signing in &amp; two-factor authentication</h2>
+        <p class="lead">Staff sign in at <a href="https://studiocenterauditions.com/auth/signin">studiocenterauditions.com</a> with their username and password, the same way clients do (see the <a href="client-guide.html#sign-in">client guide</a>).</p>
+        <h3>Turning on two-factor authentication (2FA)</h3>
+        <p>Admins and producers can protect their accounts with a code from an authenticator app (Google Authenticator, 1Password, and so on).</p>
+        <ol class="steps">
+          <li>Open <b>Account security</b> (<code>/admin/account/security</code>) and click <b>Enable two-factor authentication</b>.</li>
+          <li>In your authenticator app, add an account and enter the <b>secret</b> shown (or paste the <code>otpauth://</code> link if your app accepts one).</li>
+          <li>Type the 6-digit code from the app into <b>Verification code</b> and click <b>Confirm and enable</b>.</li>
+        </ol>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-security.webp" alt="The Account security page" width="1800" height="1125" loading="lazy"></div>
+        </figure>
+        <p>From then on, after your password you'll be asked for an <b>Authentication code</b>. Once verified, that browser won't ask again for 12 hours. To turn 2FA off, use <b>Disable 2FA</b> on the same page.</p>
+      </section>
+
+      <section id="dashboard">
+        <h2><span class="num">2.</span>The dashboard</h2>
+        <p class="lead">Your home page after signing in: what needs attention today.</p>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-dashboard.webp" alt="The staff dashboard" width="1800" height="1125" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>Due within 24h</b>: open projects nearing their deadline.</span></li>
+            <li><b class="n">2</b><span><b>Missing auditions today</b>: talent still outstanding for projects due today.</span></li>
+            <li><b class="n">3</b><span><b>New project leads</b>: unread new-project requests from clients.</span></li>
+            <li><b class="n">4</b><span><b>Call list pressure</b>: talent waiting to be called, messaged, scheduled, or emailed.</span></li>
+            <li><b class="n">5</b><span><b>Search</b> projects, talent, and users from any page.</span></li>
+          </ul>
+        </figure>
+        <p>Below the cards: projects due soon, missing auditions, today's auditions by producer, recent activity, coordinator stats, and the call list, each with a link to the full report or tool.</p>
+      </section>
+
+      <section id="projects">
+        <h2><span class="num">3.</span>The projects list</h2>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-projects.webp" alt="The projects list" width="1800" height="1125" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>Create project</b> (see <a href="#create">section 4</a>).</span></li>
+            <li><b class="n">2</b><span><b>Filter Options</b>: status, owner, dates, search, sort order, and page size.</span></li>
+            <li><b class="n">3</b><span><b>Select</b> projects (or <b>Select page</b>) to change several at once.</span></li>
+            <li><b class="n">4</b><span><b>Bulk status</b>: appears once something is selected; pick a status, then <b>Apply</b>.</span></li>
+            <li><b class="n">5</b><span><b>Due</b>: “Due in 2 days”, “Due today”, or “Overdue by…” for open projects; hover for the exact time.</span></li>
+            <li><b class="n">6</b><span><b>Status</b>.</span></li>
+          </ul>
+        </figure>
+        <h3>Row colors</h3>
+        <p>Each row's color shows its status at a glance:</p>
+        <table class="simple">
+          <tbody>
+            <tr><td><span class="chip blue">In Progress</span></td><td>Collecting auditions.</td></tr>
+            <tr><td><span class="chip red">Overdue</span></td><td>In progress and past its due time.</td></tr>
+            <tr><td><span class="chip amber">On Hold</span></td><td>Paused. Projects set to <i>No Sounders – Approved</i> are amber too.</td></tr>
+            <tr><td><span class="chip green">Booked</span> / <span class="chip green">Closed – Pending Client Decision</span></td><td>Casting finished.</td></tr>
+            <tr><td><span class="chip brown">Canceled</span></td><td>Canceled.</td></tr>
+            <tr><td><span class="chip grey">ReAuditioned</span> / <span class="chip grey">Dead</span></td><td>Replaced by a new project, or abandoned.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="create">
+        <h2><span class="num">4.</span>Creating a project</h2>
+        <p class="lead">Creating a project takes two steps: the project details, then the talent.</p>
+        <h3>Step 1: project details</h3>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-create-1.webp" alt="New project: title, due date, and clients" width="1800" height="1617" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>Title</b>: client and spot, e.g. “Harbor Bank — Holiday Promo :15 Radio”.</span></li>
+            <li><b class="n">2</b><span><b>Due Date/Time</b>: the audition deadline (Eastern time).</span></li>
+            <li><b class="n">3</b><span><b>Create Client</b> if the client doesn't have an account yet.</span></li>
+            <li><b class="n">4</b><span>Tick the <b>clients</b> who should see this project. Use the filters to find them.</span></li>
+          </ul>
+        </figure>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-create-2.webp" alt="New project: notify client, scripts, next" width="1800" height="1470" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>Notify Client</b>: <b>Yes</b> sends the clients the opening email when the project is created.</span></li>
+            <li><b class="n">2</b><span><b>Scripts</b>: drop the script PDF here. <b>A script is required</b> to continue.</span></li>
+            <li><b class="n">3</b><span><b>Next Section</b>: on to talent.</span></li>
+          </ul>
+        </figure>
+        <p>Above these, write the <b>Description &amp; Specs</b> (what talent and clients need to know) and choose the <b>Sounders</b> setting. Add any <b>Reference Files</b> (any file type) below the scripts.</p>
+        <h3>Step 2: talent</h3>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-create-talent.webp" alt="New project: choosing talent" width="1800" height="1470" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>C (Cast)</b>: add the talent to the project.</span></li>
+            <li><b class="n">2</b><span><b>R (Requested)</b>: mark talent the client asked for by name.</span></li>
+          </ul>
+        </figure>
+        <p>Filter by name, gender, union status, age, location, typecast, and more to find the right voices. Add a <b>Part</b> (e.g. Lead, Announcer) for each. Then click <b>Create Project</b> at the bottom; <b>Previous Section</b> goes back to the details.</p>
+        <h3>What happens when you create it</h3>
+        <ul>
+          <li>Each cast talent gets the audition request by email, and their status becomes <b>Emailed</b>.</li>
+          <li>The team is notified of the new project.</li>
+          <li>With <b>Notify Client: Yes</b>, the clients get the opening email with their sign-in details.</li>
+        </ul>
+      </section>
+
+      <section id="project-page">
+        <h2><span class="num">5.</span>The project page</h2>
+        <p class="lead">Everything about one project. Use the <b>On this page</b> links to jump between sections.</p>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-header.webp" alt="The project header" width="1800" height="356" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>Status</b>: changing it is logged in the notes. Choosing <i>Canceled</i> asks first and notifies the people involved.</span></li>
+            <li><b class="n">2</b><span><b>Owner</b>: the producer responsible (admins can reassign).</span></li>
+            <li><b class="n">3</b><span><b>Extend Audition</b>: move the deadline (below).</span></li>
+            <li><b class="n">4</b><span><b>View in Client Portal</b>: see exactly what the client sees (opens a new tab).</span></li>
+            <li><b class="n">5</b><span><b>Edit</b> the title, description, and due date.</span></li>
+            <li><b class="n">6</b><span><b>Duplicate</b>: copy the project to start a similar one.</span></li>
+            <li><b class="n">7</b><span><b>Re-audition</b>: start a new project based on this one.</span></li>
+          </ul>
+        </figure>
+        <h3>Extending the deadline</h3>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-extend.webp" alt="Extending the audition deadline" width="1800" height="356" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span>Pick the new date and time.</span></li>
+            <li><b class="n">2</b><span><b>Update Due Date</b>: the change is added to the notes and emailed to you as a record. If the project was <i>Closed – Pending Client Decision</i>, this reopens it to <i>In Progress</i>.</span></li>
+          </ul>
+        </figure>
+      </section>
+
+      <section id="notes">
+        <h2><span class="num">6.</span>Notes</h2>
+        <p>Internal notes for the team. Status changes, emails sent, and deadline changes are added here automatically, so the notes double as the project's history.</p>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-notes.webp" alt="The Notes panel" width="1800" height="1000" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>Sounders</b> setting for the project.</span></li>
+            <li><b class="n">2</b><span>Type a note…</span></li>
+            <li><b class="n">3</b><span>…and <b>Save</b>.</span></li>
+            <li><b class="n">4</b><span><b>Delete</b> a note (it stays visible, crossed out).</span></li>
+          </ul>
+        </figure>
+        <p>Notes from clients appear separately under <b>Client Notes</b>.</p>
+      </section>
+
+      <section id="files">
+        <h2><span class="num">7.</span>Scripts &amp; reference files</h2>
+        <p>Open <b>Scripts</b> or <b>Reference Files</b> on the project page and drop files in (or click to browse). Scripts are PDFs; reference files can be anything (spec sheets, previous spots, pronunciation guides). Each file can be downloaded or deleted from its row.</p>
+      </section>
+
+      <section id="auditions">
+        <h2><span class="num">8.</span>Posting auditions</h2>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-auditions.webp" alt="The Auditions section" width="1800" height="1300" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>Upload auditions</b>: drop MP3 files here, or click <b>browse</b>. Several at once is fine.</span></li>
+            <li><b class="n">2</b><span><b>Download All</b>: every take as a zip.</span></li>
+            <li><b class="n">3</b><span><b>Check All Files</b>: confirms each file is really there. Takes that fail are hidden from clients until fixed.</span></li>
+            <li><b class="n">4</b><span><b>Delete All</b>: removes every take (asks first).</span></li>
+            <li><b class="n">5</b><span><b>Rename</b> a take's file.</span></li>
+            <li><b class="n">6</b><span><b>Delete</b> one take (asks first).</span></li>
+            <li><b class="n">7</b><span><b>Talent</b>: who recorded it. The app matches takes to cast talent from the file name; if it shows <b>⚠ Talent Not Assigned</b>, pick the talent here.</span></li>
+            <li><b class="n">8</b><span><b>Published</b>: only published takes appear in the client portal.</span></li>
+          </ul>
+        </figure>
+        <p>When a take is assigned to a talent, their status on the project changes to <b>Posted</b> automatically. The table also shows plays, the clients' average rating, whether the take is booked or favorited, and the client's note on it.</p>
+        <div class="tip"><strong>Clients see new takes right away.</strong> A published take shows up in their portal immediately and counts toward their “new takes” badge.</div>
+      </section>
+
+      <section id="talent">
+        <h2><span class="num">9.</span>Talent on a project</h2>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-talent.webp" alt="The Talent section" width="1800" height="1210" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>Status</b>: where each talent is in the process (below).</span></li>
+            <li><b class="n">2</b><span><b>Email talent</b>: sends the audition email now (asks first).</span></li>
+            <li><b class="n">3</b><span><b>Text talent</b>: sends the audition request by SMS.</span></li>
+            <li><b class="n">4</b><span><b>Booked</b>: tick when the talent is booked.</span></li>
+            <li><b class="n">5</b><span><b>Note</b> about this talent on this project; click the green button to save.</span></li>
+          </ul>
+        </figure>
+        <h3>Talent statuses</h3>
+        <table class="simple">
+          <tbody>
+            <tr><td><b>Cast</b></td><td>On the project, not contacted yet (shows under <i>Talent to Call</i> on the call list).</td></tr>
+            <tr><td><b>Emailed</b></td><td>Audition request sent by email.</td></tr>
+            <tr><td><b>Message left</b></td><td>Called and left a message.</td></tr>
+            <tr><td><b>Scheduled</b></td><td>Booked in to record.</td></tr>
+            <tr><td><b>Out</b></td><td>Unavailable.</td></tr>
+            <tr><td><b>Received needs to be posted</b></td><td>Audition received; post it.</td></tr>
+            <tr><td><b>Posted</b></td><td>Audition posted (set automatically when a take is assigned).</td></tr>
+            <tr><td><b>Not Posted (Bad Read)</b></td><td>Received but not usable.</td></tr>
+            <tr><td><b>Missed</b> / <b>Canceled</b></td><td>Didn't make the deadline, or dropped.</td></tr>
+          </tbody>
+        </table>
+        <h3>Adding talent</h3>
+        <p>Open <b>Edit Talent</b> at the bottom of the section. Search and filter the roster, then tick <b>C</b> to cast or <b>R</b> to mark as requested, as when creating a project. New talent can be added with <b>Create Talent</b>.</p>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-add-talent.webp" alt="Adding talent to a project" width="1800" height="900" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span><b>C</b>: cast on this project.</span></li>
+            <li><b class="n">2</b><span><b>R</b>: requested by the client.</span></li>
+          </ul>
+        </figure>
+      </section>
+
+      <section id="clients">
+        <h2><span class="num">10.</span>Clients &amp; client emails</h2>
+        <p><b>Main Clients</b> are the people who review the project in the portal. Send them the standard emails from here:</p>
+        <figure class="narrow">
+          <div class="frame"><img src="assets/guide/s-main-clients.webp" alt="Main Clients with Opening, Carryover and Closing" width="1128" height="770" loading="lazy"></div>
+          <ul class="legend">
+            <li><b class="n">1</b><span>Tick the clients to email.</span></li>
+            <li><b class="n">2</b><span><b>Opening</b>: the project has started, with their sign-in details.</span></li>
+            <li><b class="n">3</b><span><b>Carryover</b>: auditions are uploaded and ready, with sign-in details.</span></li>
+            <li><b class="n">4</b><span><b>Closing</b>: casting is closed; thanks for their business.</span></li>
+          </ul>
+        </figure>
+        <p>Each email asks for confirmation before sending and is recorded in the activity log. Use <b>Edit Main Clients</b> to add or remove clients. <b>Additional Clients</b> lists other people who can see the project; manage them with <b>Edit Additional Clients</b>.</p>
+      </section>
+
+      <section id="phases">
+        <h2><span class="num">11.</span>Phases</h2>
+        <p>Track the project's progress through <b>Casting</b>, <b>Talent Notification</b>, and <b>Posting and Publishing</b>. Set each phase's status and end date; the progress bar at the top of the project page follows along.</p>
+        <figure class="narrow">
+          <div class="frame"><img src="assets/guide/s-phases.webp" alt="The Phases panel" width="1128" height="1000" loading="lazy"></div>
+        </figure>
+      </section>
+
+      <section id="roster">
+        <h2><span class="num">12.</span>Talent roster &amp; typecasts</h2>
+        <p><b>Talents</b> in the top bar lists every voice on the roster. Filter by name, gender, union status, age, location, exclusivity, and typecast; open a talent to see their details, projects, and history. <b>Create talent</b> adds someone new; <b>Export CSV</b> downloads the filtered list; <b>Add page to project</b> casts everyone on the current page onto a project.</p>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-talents.webp" alt="The talent roster" width="1800" height="1125" loading="lazy"></div>
+        </figure>
+        <p><b>Typecasts</b> are the tags used to describe voices (e.g. Warm, Conversational, British). Manage them under <b>Typecasts</b> in the top bar; they appear as filters throughout the app.</p>
+      </section>
+
+      <section id="tools">
+        <h2><span class="num">13.</span>Tools</h2>
+        <p>The wrench icon in the top bar opens the tools:</p>
+        <table class="simple">
+          <tbody>
+            <tr><td><b>Call List</b></td><td>Talent across open projects, grouped as <i>Talent to Call</i> (Cast), <i>Messages Left</i>, <i>Already Scheduled</i>, and <i>Emailed</i>.</td></tr>
+            <tr><td><b>Email / SMS Talent</b></td><td>Send an email or text to a filtered group of talent. Save filters you use often.</td></tr>
+            <tr><td><b>New Project Form Submissions</b></td><td>New-project requests from clients. Opening one marks it read.</td></tr>
+            <tr><td><b>Talent Import</b> / <b>Typecast Import</b></td><td>Bulk-add talent or typecasts from a file.</td></tr>
+            <tr><td><b>Backup &amp; Delete Projects</b></td><td>Archive old projects and their files, restore a backup, or delete permanently.</td></tr>
+            <tr><td><b>Logs</b> / <b>Ops dashboard</b></td><td>System activity and health, for admins.</td></tr>
+          </tbody>
+        </table>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-call-list.webp" alt="The call list" width="1800" height="1125" loading="lazy"></div>
+        </figure>
+      </section>
+
+      <section id="reports">
+        <h2><span class="num">14.</span>Reports</h2>
+        <p>The document icon in the top bar opens the reports: <b>Auditions Booked</b>, <b>Auditions Per Producer</b>, <b>Assigned Producer Report</b>, <b>ISDN Source Connect List</b>, and <b>Missing Auditions</b> (talent who haven't submitted for projects due today).</p>
+        <figure>
+          <div class="frame"><img src="assets/guide/s-reports.webp" alt="The reports page" width="1800" height="1125" loading="lazy"></div>
+        </figure>
+      </section>
+
+      <section id="automatic">
+        <h2><span class="num">15.</span>Automatic emails</h2>
+        <p>The app sends these on its own, in Eastern time:</p>
+        <table class="simple">
+          <thead><tr><th>Email</th><th>When</th><th>To</th></tr></thead>
+          <tbody>
+            <tr><td>Pre-close summary</td><td>About 2 hours before a project is due</td><td>The project owner, copied to the team: who's posted, not called, not posted, and out.</td></tr>
+            <tr><td>Main clients check</td><td>At :01 and :31 past each hour, for projects due within 30 minutes that have no main clients</td><td>The project owner.</td></tr>
+            <tr><td>Missing auditions</td><td>Monday to Friday at 4:00 PM and 9:30 PM</td><td>The team: talent still outstanding.</td></tr>
+            <tr><td>Booking confirmation</td><td>When a client books takes</td><td>The client, copied to the owner and the team.</td></tr>
+            <tr><td>Client notes</td><td>When a client saves a project note</td><td>The team.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Studio Center. All rights reserved.</span>
+      <span><a href="./">Guide home</a><a href="client-guide.html">Client guide</a><a href="https://www.studiocenter.com">StudioCenter.com</a></span>
+    </div>
+  </footer>
+  <script src="assets/toc.js"></script>
+</body>
+</html>
