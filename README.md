@@ -24,8 +24,8 @@
 | Page | For | Covers |
 |---|---|---|
 | [`index.html`](index.html) | Everyone | Overview, quick start, common questions |
-| [`client-guide.html`](client-guide.html) | Clients | Signing in, reviewing and rating takes, booking, downloads, phone use, shortcuts, account |
-| [`staff-guide.html`](staff-guide.html) | Studio Center team | 2FA, dashboard, projects, creating projects, auditions, talent, client emails, phases, tools, reports, automatic emails |
+| [`client-guide.html`](client-guide.html) | Clients | Signing in, reviewing, rating, shortlisting and commenting on takes, the player, booking, downloads, sharing, requesting a project, phone use, shortcuts, account |
+| [`staff-guide.html`](staff-guide.html) | Studio Center team | 2FA, dashboard and header, projects, creating projects, auditions, talent, clients and client emails, phases, review links, talent roster, users, tools, reports, settings, automatic emails |
 
 ## Editing
 
